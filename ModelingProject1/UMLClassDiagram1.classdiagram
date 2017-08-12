@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="b962c95a-61dd-453f-9503-68a459bd93aa" name="UMLClassDiagram1" linkedPackageId="5343d63e-13ad-41fd-898f-a68725a52d9a" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="c2ed3058-9921-4698-8b9b-2bdb6687f035">
+      <profileInstance Id="0d6dcb4e-f164-4598-b815-23b58a1134f0" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="7addca44-20f7-4573-a2ba-a1e196af3541">
+      <profileInstance Id="14f73ab2-7a92-4b6a-840e-297280bc042a" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="63ff786b-7c5b-4821-a219-568a1dd562d4" name="Encuesta" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8175a0f3-d0b3-4d90-ab19-4ec7013d292e" />
+        <ownedAttributesInternal>
+          <property Id="b27892f2-d077-4165-9345-d5b3bd24f914" name="Estado_encuesta" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f81a72e9-a591-4bb9-83c0-a8ceba6eed59" />
+          </property>
+          <property Id="427883bb-6ff0-4098-a35d-b933b87e3238" name="Total_encuestados" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b31f109a-aaaf-4654-ad78-2db6d8aae0f6" />
+          </property>
+          <property Id="437f07db-be66-4013-9e2e-4bd6be47b077" name="Tipo_encuesta" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e3b0e503-a4f3-4d7b-b24f-8d5daaeb47fe" />
+          </property>
+          <property Id="ca671dbe-fd21-4ee3-b345-42143e78a6bb" name="Fecha" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e80dc535-2a39-428b-8acd-cbcc390b331e" />
+          </property>
+          <property Id="562b319b-7c58-420f-823c-dd1f28d79652" name="Empesa" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1908c92a-1374-4c12-99d4-9870a7dbed48" />
+          </property>
+          <property Id="8cedc799-7840-4498-8837-64a503140749" name="ID_Encuesta" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b7b07004-8c2d-49cc-9cd2-4078eed88b35" />
+          </property>
+          <property Id="c500a466-5ad3-4e7c-b354-a92d921b2b76" name="Descripcion" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1025083f-d253-4414-93cb-c7354347efff" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="17d90d96-94f1-4e32-8794-62fdf3350451" name="Tipo_Encuesta" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4c23d980-0094-4c66-a708-64b267890ba3" />
+        <targetEnds>
+          <association Id="697f73c7-92d2-4379-b2b3-d882643e9a82" isDerived="false" sourceEndRoleName="Tipo_Encuesta" targetEndRoleName="Encuesta" isLeaf="false" isAbstract="false">
+            <classMoniker Id="63ff786b-7c5b-4821-a219-568a1dd562d4" LastKnownName="Encuesta" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c026c5fa-a837-4264-b701-4d8fc22593cf" name="Tipo_Encuesta" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f6aaa77b-bb35-4242-9d1a-ba860f7c32bb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="999e6f21-e983-41fd-96ee-f646596af4c9" name="Encuesta" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="acca7c31-d0bd-403b-9146-3ed3f39ab133" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1da7dcc1-3fad-4af5-9fef-89fc122083f2" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c7e928e4-4b20-4ef8-8b3c-20f3f2ad98ea" name="Transaccion" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="25204ee7-4250-451a-8d87-acb333b05879" />
+        <generalsInternal>
+          <generalization Id="070f7825-239c-4fab-8e39-ef0104863f39" isSubstitutable="false">
+            <classMoniker Id="17d90d96-94f1-4e32-8794-62fdf3350451" LastKnownName="Tipo_Encuesta" />
+            <elementDefinition Id="c1a08cb4-2680-4331-847c-38bcaccb9c3b" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="cc0d8187-9d15-4d70-a3a8-64d3de628ae3" name="Atencion al Cliente" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6a606208-7b54-4f0b-b7be-ab4ab461c7b9" />
+        <generalsInternal>
+          <generalization Id="3b2fe3d3-5cca-422b-bed6-f1495d04c29a" isSubstitutable="false">
+            <classMoniker Id="17d90d96-94f1-4e32-8794-62fdf3350451" LastKnownName="Tipo_Encuesta" />
+            <elementDefinition Id="85cee5c0-8ad0-494b-a231-be205b7417c7" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f0e15456-e050-4beb-be21-e4d1197eb985" name="Empresa" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3dc4be3b-2ee9-4535-82a8-ad7a55b90d23" />
+        <targetEnds>
+          <association Id="e61be8c7-c078-409d-a46b-6915e00f0f91" isDerived="false" sourceEndRoleName="Empresa" targetEndRoleName="Encuesta" isLeaf="false" isAbstract="false">
+            <classMoniker Id="63ff786b-7c5b-4821-a219-568a1dd562d4" LastKnownName="Encuesta" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f68a3c05-ebd0-4095-906b-4c04ba1362da" name="Empresa" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="01125de3-77d5-4d52-be60-04a38ea0d694" name="Lower" value="1">
+                      <elementDefinition Id="77bfa575-ef1f-4178-ad41-8fe5db82e365" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="f97aba60-a7e9-40ba-8eb4-c34ad042af98" name="Upper" value="1">
+                      <elementDefinition Id="93371b7c-9525-42b3-8358-6e6ca273a5e6" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="d271c4d2-056f-4c3d-b253-9925b2891b00" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6671210c-69fd-45f7-9c1c-c40d7ab759b8" name="Encuesta" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="43489020-be45-46e5-867a-a6582df678ef" name="Lower" value="1.*">
+                      <elementDefinition Id="6a623557-50f4-4e49-8eae-a339a39b4508" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="ffe25564-965b-478b-843d-62fa5aeafc97" name="Upper" value="1.*">
+                      <elementDefinition Id="fb0e359c-86dd-4416-bbba-3ac43c34a80b" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="2a8525a5-e532-4954-b332-ebf76291ab71" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b0a2f311-f355-4c4d-8835-ea11a8c7bfa2" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="588c59fd-114d-4f81-b886-c7f9ae230e5a" name="Ruc_Empresa" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d6aba144-4eb9-41a2-9c6f-658aa205ab4a" />
+          </property>
+          <property Id="419397e7-dc32-46e1-995d-e4c3251ad1ea" name="Telefono_Empresa" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="de2459d3-207f-43e1-80bd-9231d9ae32ba" />
+          </property>
+          <property Id="7d81fa71-6a91-474e-947f-a7f5693374d1" name="Dirección_Empresa" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="72bc585d-6cf9-4a82-bf2e-87b5027119b4" />
+          </property>
+          <property Id="37ad3d01-85f8-4dab-9983-1c6ed06f3c2e" name="Nombre_Empresa" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c695ecff-c71c-481c-8287-58b34010480b" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e281ea51-5c4a-4dc4-890a-69fda6572bb1" name="Detalle_encuesta" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="bab0f80b-a2cc-4df6-b20d-fe331b297c40" />
+        <targetEnds>
+          <association Id="13a9299c-2bd2-44de-94e2-9e8984cbdfc1" isDerived="false" sourceEndRoleName="Detalle_encuesta" targetEndRoleName="Encuesta" isLeaf="false" isAbstract="false">
+            <classMoniker Id="63ff786b-7c5b-4821-a219-568a1dd562d4" LastKnownName="Encuesta" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="26f1406c-d5c3-4e28-9dae-8edc40e7420f" name="Detalle_encuesta" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="06ca83f7-e259-4979-92bd-2e72d0e4e1f4" name="Lower" value="*">
+                      <elementDefinition Id="b3b0d082-5f1c-4324-baaf-6f658ab5ece1" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="443192cd-9fcc-4426-801c-bc02fa85ef2d" name="Upper" value="*">
+                      <elementDefinition Id="75044d0c-53d7-4cd5-89d5-8955f4393187" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="e0d8ee00-5e11-4aa6-b5e4-974dbb920870" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fd9afec1-c9a2-408a-a45c-d0b63d1fdefc" name="Encuesta" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cb6098ba-c8ba-44e3-afd5-98401215b369" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7b0330eb-3a04-4a19-9fb4-4b121f90608f" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="89157976-97ee-42ba-b55c-49334ad033c3" name="Id_encuesta" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e9099bcb-a878-43c4-ac8e-f709a08bf23c" />
+          </property>
+          <property Id="fd399689-3285-45d8-b3aa-08c8b7708e87" name="Respuesta_Pregunta" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9072a644-7c03-48da-856f-6e6ff538ee92" />
+          </property>
+          <property Id="d5b025d2-8322-4a6c-8ab0-b17214346010" name="Tipo_Pregunta" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="74d9ae37-4c64-475d-b2c3-239213a1ff83" />
+          </property>
+          <property Id="5f2b03e4-e025-45b3-8fbd-7210d383bdc9" name="Contenido__Pregunta" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="32917aa4-c50a-47e0-a144-cee7d114c1e5" />
+          </property>
+          <property Id="f9f956e9-222f-4f29-b8fe-92425817c68c" name="ID_Pregunta" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="763cc08a-7b99-4051-81b6-c0fa023d7b3f" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="25bd57c2-45c3-457c-b360-9644c71fd39c" name="Tipo_Pregunta" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="34a8e5f5-0a39-465c-bf91-2c18cb721c56" />
+        <targetEnds>
+          <association Id="4790e7a0-68e1-4fc4-babb-b019a706cacf" isDerived="false" sourceEndRoleName="Tipo_Pregunta" targetEndRoleName="Detalle_encuesta" isLeaf="false" isAbstract="false">
+            <classMoniker Id="e281ea51-5c4a-4dc4-890a-69fda6572bb1" LastKnownName="Detalle_encuesta" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d3677f8a-fae5-46f6-a4b0-0cff15324ee5" name="Tipo_Pregunta" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="efe9d308-858c-4d03-ace9-089dac22cc4f" name="Lower" value="1">
+                      <elementDefinition Id="37c11a97-2a0a-4adc-91bb-c72f053b4ead" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="65564c2c-ac03-4b01-b46c-473466e12e25" name="Upper" value="1">
+                      <elementDefinition Id="335cd112-0a30-449e-ada0-576297ca1173" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="160e83dc-eacd-4b18-b1f3-fe1d626de768" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fd4c18e6-639f-4397-ae36-e1ce4769390e" name="Detalle_encuesta" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8e9e4993-a575-49f7-85db-7f8ef7716c80" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="176d2ce6-d606-47b8-82c5-d0bb0a5c3d96" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1082d880-6a16-4554-812a-4688ab8a4527" name="Abierta" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0f6ae039-e4dc-4d09-8927-9daeb76e60ea" />
+        <generalsInternal>
+          <generalization Id="416f27eb-405e-49e1-9ea1-b49e3c3c7c4a" isSubstitutable="false">
+            <classMoniker Id="25bd57c2-45c3-457c-b360-9644c71fd39c" LastKnownName="Tipo_Pregunta" />
+            <elementDefinition Id="aa277edd-1fa2-4b1b-8b4e-723c07b903a8" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3d9a5092-3666-4e59-a154-217d5c7e12c7" name="Cerrada" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6bccaf34-82e0-4bf7-aeb5-404cb19acfbd" />
+        <generalsInternal>
+          <generalization Id="bd855bc4-aec2-48c0-a63a-462ddc4c0c49" isSubstitutable="false">
+            <classMoniker Id="25bd57c2-45c3-457c-b360-9644c71fd39c" LastKnownName="Tipo_Pregunta" />
+            <elementDefinition Id="6bed491a-38ce-4775-a2a5-4b5ae3a4eb88" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="5343d63e-13ad-41fd-898f-a68725a52d9a" name="ModelingProject1">
+    <elementDefinition Id="7eac927b-c804-4f39-a5b9-c2bd2a989e4e" />
+  </package>
+</logicalClassDesignerModel>
